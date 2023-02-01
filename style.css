@@ -1,0 +1,60 @@
+html {
+    background-color: rgb(182, 103, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-weight: bolder;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin: 20px;
+}
+
+@media screen and (max-width: 1000px){
+    main{
+        display: block;
+    }
+}
+
+input, select {
+    width: 450px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid rgb(128, 0, 202);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button, input[type=submit] {
+    width: 450px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid rgb(155, 0, 121);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgb(230, 43, 255);
+}
+
+select[id=autorM],[id=obrazD] {
+    border: 3px solid rgb(155, 0, 121);
+    background-color: rgb(243, 156, 255);
+}
+
+.vypis {
+    width: 405px;
+    font-weight: bolder;
+    border: 3px solid rgb(155, 0, 121);
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+    padding: 12px 20px;
+}
