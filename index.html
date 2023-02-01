@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Galerie</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!--Form pro autora-->
+      <form class="AutorForm">
+        <h3><u>Pridani autora</u></h3>
+        <label for="finame">Jmeno:</label><br />
+        <input
+          type="text"
+          id="finame"
+          name="finame"
+          placeholder="jmeno..."
+          required
+        /><br />
+        <label for="lname">Prijmeni:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="prijmeni..."
+          required
+        /><br />
+        <label for="dateBirth">Datum narozeni:</label><br />
+        <input type="date" id="dateBirth" name="dateBirth" required /><br />
+        <input type="submit" value="Pridat autora" id="submitAutor" />
+      </form>
+
+      <!--Form pro obraz-->
+      <form class="ObrazForm">
+        <h3><u>Pridani obrazu</u></h3>
+        <label for="nazev">Nazev:</label><br />
+        <input
+          type="text"
+          id="nazev"
+          name="nazev"
+          placeholder="nazev..."
+          required
+        /><br />
+        <label for="cena">Cena:</label><br />
+        <input
+          type="number"
+          id="cena"
+          name="cena"
+          placeholder="cena..."
+          min="0"
+          required
+        /><br />
+        <label for="datumVzniku">Datum vzniku:</label><br />
+        <input type="date" id="datumVzniku" name="datumVzniku" required /><br />
+        <label for="autor">Vyber autora:</label><br />
+        <select id="autor" name="autor" required></select
+        ><br />
+        <input type="submit" value="Pridat obraz" id="submitObraz" />
+      </form>
+    </main>
+    <aside>
+      <h3><u>Metody</u></h3>
+      <button id="one" type="button">
+        Celkovou cenu všech obrazů v galerii</button
+      ><br />
+      <button id="two" type="button">
+        Autora a cenu tří nejdražších obrazu v galerii</button
+      ><br />
+      <select id="autorM" name="autorM" required></select
+      ><br />
+      <button id="three" type="button">
+        Název a cenu obrazu od zadaného autora, setříděné podle ceny</button
+      ><br />
+      <button id="four" type="button">
+        Všechny autory a jejich seskupené obrazy, které namalovali</button
+      ><br />
+      <button id="five" type="button">Vsechny obrazy v galerii</button><br />
+      <button id="six" type="button">Vsechny autory</button><br />
+      <textarea class="vypis" rows="1" readonly></textarea><br />
+      <button id="deleteLocalStorage" type="button">
+        Smazat vsechny obrazy a autory (i z local storage)</button
+      ><br />
+      <select id="obrazD" name="obrazD" required></select
+      ><br />
+      <button id="deleteO" type="button">Smazat vybrany obraz</button><br />
+    </aside>
+    <footer></footer>
+  </body>
+  <script src="main.js"></script>
+</html>
